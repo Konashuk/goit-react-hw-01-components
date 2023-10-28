@@ -3,14 +3,16 @@ import { StaticticSection } from './statisticSection/statisticSection';
 import user from './user.json';
 import data from './data.json';
 import friends from './friends.json';
+import transactions from './transactions.json';
 import { FriendList } from './friendList/friendsList';
+import { TransactionHistory } from './transaction/TransactionHistory';
 
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        display: 'block',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -34,6 +36,9 @@ export const App = () => {
       </div>
       <div>
         <FriendList friends={friends} />
+      </div>
+      <div>
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );
