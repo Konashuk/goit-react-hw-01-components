@@ -1,4 +1,3 @@
-import { getRandomColor } from 'components/get-random-color';
 import styled from 'styled-components';
 
 export const Table = styled.thead`
