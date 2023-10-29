@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getRandomColor } from 'components/get-random-color';
 
 export const ProfileContainer = styled.div`
   background-color: grey;
@@ -24,9 +25,8 @@ export const Text = styled.p`
 
 export const List = styled.ul`
   display: flex;
+  justify-content: space-between;
   background-color: aqua;
-  margin: 0;
-  padding: 0;
 `;
 
 export const Item = styled.li`
@@ -35,6 +35,8 @@ export const Item = styled.li`
   flex-direction: column;
   padding: 20px;
   font-size: 12px;
+  color: white;
   border: 1px solid grey;
   text-align: center;
+  background-color: ${getRandomColor};
 `;

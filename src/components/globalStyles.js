@@ -18,7 +18,8 @@ code {
 img{
 display: block;
 max-width:100%;
-object-fit: cover;};
+object-fit: cover;
+}
 
 h1,
   h2,
@@ -26,7 +27,7 @@ h1,
   h4,
   h5,
   h6,
-  p{
+  p,ul,li{
   margin: 0;
   padding: 0; };
 `;

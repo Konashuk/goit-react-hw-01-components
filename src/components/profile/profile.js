@@ -24,16 +24,16 @@ export const Profile = ({
       </DescriptionContainer>
       <List>
         <Item>
-          <span class="label">Followers</span>
-          <span class="quantity">{followers}</span>
+          <span>Followers</span>
+          <span>{followers}</span>
         </Item>
         <Item>
-          <span class="label">Views</span>
-          <span class="quantity">{views}</span>
+          <span>Views</span>
+          <span>{views}</span>
         </Item>
         <Item>
-          <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
+          <span>Likes</span>
+          <span>{likes}</span>
         </Item>
       </List>
     </ProfileContainer>

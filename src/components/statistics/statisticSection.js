@@ -1,19 +1,18 @@
 import { Statistic } from 'components/statistics/statistics';
+import { List } from 'components/profile/profile.styled';
 
 export const StaticticSection = ({ status, title }) => {
   return (
-    <section class="statistics">
+    <section>
       {title !== undefined && <h2>{title}</h2>}
 
-      <ul class="stat-list">
+      <List>
         {status.map(ar => {
           return (
-            <li class="item" key={ar.id}>
-              <Statistic type={ar.label} percent={ar.percentage} />
-            </li>
+            <Statistic type={ar.label} percent={ar.percentage} key={ar.id} />
           );
         })}
-      </ul>
+      </List>
     </section>
   );
 };

@@ -1,9 +1,11 @@
+import { PartTableTd } from './transactionhistory.styled';
+
 export const Transaction = ({ type, amount, currency }) => {
   return (
     <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <PartTableTd>{type}</PartTableTd>
+      <PartTableTd>{amount}</PartTableTd>
+      <PartTableTd>{currency}</PartTableTd>
     </tr>
   );
 };

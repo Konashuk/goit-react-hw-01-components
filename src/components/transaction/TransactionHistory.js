@@ -3,7 +3,7 @@ import { Transaction } from './transaction';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table class="transaction-history">
+    <table>
       <TableHeadTransaction type="Type" amount="Amount" currency="Currency" />
       <tbody>
         {items.map(transaction => {

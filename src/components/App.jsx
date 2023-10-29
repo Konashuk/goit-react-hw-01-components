@@ -1,5 +1,5 @@
 import { Profile } from './profile/profile';
-import { StaticticSection } from './statisticSection/statisticSection';
+import { StaticticSection } from './statistics/statisticSection';
 import user from './user.json';
 import data from './data.json';
 import friends from './friends.json';
@@ -14,6 +14,7 @@ export const App = () => {
       style={{
         // height: '100vh',
         display: 'flex',
+        gap: 40,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
