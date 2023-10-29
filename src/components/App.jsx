@@ -6,13 +6,15 @@ import friends from './friends.json';
 import transactions from './transactions.json';
 import { FriendList } from './friendList/friendsList';
 import { TransactionHistory } from './transaction/TransactionHistory';
+import { GlobalStyles } from './globalStyles';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'block',
+        // height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -40,6 +42,7 @@ export const App = () => {
       <div>
         <TransactionHistory items={transactions} />
       </div>
+      <GlobalStyles />
     </div>
   );
 };
